@@ -10,6 +10,7 @@ const {
   AuthorizedDirective,
 } = require("./directives/AuthDirectives");
 const { FormatDateDirective } = require("./directives/GeneralDirectives");
+const { application } = require("express");
 
 dotenv.config();
 
@@ -43,6 +44,10 @@ const server = new ApolloServer({
     },
   },
 });
+
+app.get('/',(req,res)=>{
+  res.send('Now Social-Media API is using easy......')
+})
 
 mongoose
   .connect(process.env.DB_URL, {
