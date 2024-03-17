@@ -45,8 +45,8 @@ const server = new ApolloServer({
   },
 });
 
-app.get('/',(req,res)=>{
-  res.send('Now Social-Media API is using easy......')
+server.get('/',(req,res)=>{
+  res.send('Now easy to use social-media-api......')
 })
 
 mongoose
