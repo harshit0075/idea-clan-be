@@ -10,7 +10,11 @@ const {
   AuthorizedDirective,
 } = require("./directives/AuthDirectives");
 const { FormatDateDirective } = require("./directives/GeneralDirectives");
-const { application } = require("express");
+
+
+const express  = require('express');
+const app = express();
+
 
 dotenv.config();
 
@@ -45,7 +49,7 @@ const server = new ApolloServer({
   },
 });
 
-server.get('/',(req,res)=>{
+app.get('/',(req,res)=>{
   res.send('Now easy to use social-media-api......')
 })
 
