@@ -10,3 +10,4 @@ Has functionalities to
 ## Contributions 🙋🏼‍♂️
 This app has all the basic functionalities to create a social media app, but any contributions to add new features or any improvement to the code would be really helpful.
 
+https://idea-clan-be.onrender.com/
